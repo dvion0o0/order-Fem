@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+:root{
+    --paleBlue:hsl(225, 100%, 94%);
+    --brightBlue:rgb(56, 41, 224);
+    --veryPaleBlue:hsl(225, 100%, 98%);
+    --desaturatedBlue:hsl(224, 23%, 55%);
+    --darkBlue:hsl(223, 47%, 23%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-size: 16px;
+    font-weight: 500;
+    background:#E0E8FF
+}
+
+.wrapper{
+    min-height: 100vh;
+    background: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position: 0 -30%;
+    position: relative;
+}
+
+.wrapper-center{
+    width: 90vw;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+}
+
+.order-card{
+    width: 350px;
+    background:white;
+border-radius: 10px;
+box-shadow: 0 10px 10px 4px rgba(0, 0, 0, 0.1);
+}
+
+.order-header{
+    width: 100%;
+}
+
+.order-header img {
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.order-content{
+width: 80%;
+margin: 0 auto;
+padding: 2rem 0;
+display: grid;
+justify-content: center;
+text-align: center;
+}
+
+.order-content h2{
+    color:var(--darkBlue);
+    margin-bottom: 1rem;
+}
+
+.order-content p {
+    color:var(--desaturatedBlue);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.price-changer{
+    width: 100%;
+    background:var(--veryPaleBlue);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.price-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price-name img{
+    width: 35px;
+    height: 35px;
+    margin-right: 0.6rem;
+}
+
+.price h5{
+font-weight: 700;
+color:var(--darkBlue);
+margin-bottom: 0.3rem;
+}
+
+.price h6{
+    color:var(--desaturatedBlue);
+    font-weight: 900;
+}
+
+.price-changer a {
+    color:var(--brightBlue);
+    font-weight: 700;
+    font-size: 14px;
+    transition: all .3s linear;
+}
+
+.price-changer a:hover{
+    color:#7B66FA
+}
+
+
+button {
+    display: block;
+    margin-bottom: 1rem;
+    text-align: center;
+    border: none;
+    outline: none;
+    background:none;
+    font-size: 13px;
+    font-weight: 700;
+    color:var(--desaturatedBlue);
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+button:hover{
+    color:var(--darkBlue);
+}
+
+.payment-btn{
+    padding: 0.75rem;
+    background:var(--brightBlue);
+    color:#ffffff;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 6px 10px 6px rgba(56,41,224,0.1);
+    transition: all .3s linear;
+}
+
+.payment-btn:hover{
+    background:#7B66FA;
+    color:#ffffff;
+}
+
+@media screen and (max-width:400px) {
+    .order-card{
+        width: 100%;
+    }
+}
